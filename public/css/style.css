@@ -2,8 +2,13 @@
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     width: 30%;
+    margin: auto;
     
 }
+
+.logo {margin: auto;}
+
+
 .contenedor {
     background-color: #ebebeb;
     width: 90%;
@@ -56,6 +61,7 @@ header {
     width: 30%;
     height: 60px;
     text-align: center;
+    margin: auto;
 }
 
 .main {
@@ -87,6 +93,9 @@ header {
     margin-bottom: 10px;
     margin-top: 5px;
 }
+.icono:hover {
+    color: #0022AA;
+ }
 
 .articulofooter{
     text-align: center;
@@ -99,10 +108,11 @@ header {
 
 .articulo {
     margin: 10px;
-    border: solid 3px #7a7676;
     padding: 15px;
     background-color: white;
     justify-content: center;
+    justify-items: center;
+   
     
 }
 
@@ -115,12 +125,23 @@ header {
     height: 30px;
     background-color: #FFF;
     margin: 0px;
+    font-size: 16px;
+    right: 20px;
+    top: -15;
+
 }
 
+
 .contenedorheader {
-    justify-content: center;
     height: 10%;
     display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.contenedorarticulo {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
 }
 
 @media (min-width: 481px) 
@@ -142,10 +163,9 @@ header {
     flex-direction: row;
 
 } 
-.contenedorheader {
+.contenedorheader { 
     display: block;
     display: flex;
-    justify-content: space-around;
     height: 10%;
 }
 
@@ -159,6 +179,30 @@ header {
     text-align: center;
 }
 
+.contenedorfooter {
+    display: flex;
+    flex-direction: row;
+}
+
+}
+
+
+
+@media (max-width: 481px) {
+    .menu {display: block;}
+
+    .contenedor {display: flex;
+    flex-direction: column;}
+    
+}
+@media (max-width: 600px) {
+    .articulo { width: 30%;}
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 }
 
 
@@ -176,11 +220,10 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-
 }
 
-@media (max-width: 481px) {
-    .menu {display: block;}
-    .contenedor {display: flex;
-    flex-direction: column;}
-}
+ .enviar:hover {
+        background-color: #0022AA;
+     }
+
+
