@@ -126,10 +126,12 @@ header {
     background-color: #FFF;
     margin: 0px;
     font-size: 16px;
-    right: 20px;
-    top: -15;
+
 
 }
+.iconovehiculo:hover {
+ transform: rotateX(150deg)
+} 
 
 
 .contenedorheader {
@@ -148,7 +150,7 @@ header {
 { 
 .descripciones { display: block; }
 
-.articulo {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+.articulo:hover {box-shadow: 0px 0px 10px rgb(100, 100, 100);}
 
 .cuerpo {display: block;
     display: flex;
@@ -166,6 +168,7 @@ header {
 .contenedorheader { 
     display: block;
     display: flex;
+    flex-direction: row;
     height: 10%;
 }
 
@@ -204,6 +207,8 @@ header {
     }
     
 }
+
+
 
 
 .registro {
