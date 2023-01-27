@@ -64,23 +64,24 @@ header {
     text-align: center;
 }
 
-.contenedorarticulo {
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-    position: relative;
-    display: flex;
-    
-    
-}
-
 .articulo {
     margin: 10px;
     padding: 15px;
     background-color: white;
     justify-content: center;
     justify-items: center;
+    
    
 }
+
+.contenedorarticulo {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+  
+    
+}
+
 
 
 .precios {
@@ -88,6 +89,8 @@ font-size:18px;
 font-family: 'Roboto', sans-serif;
 margin: 0;
 width: 30%;
+display: flex;
+flex-wrap: wrap;
 }
 
 
@@ -97,19 +100,22 @@ font-family: 'Roboto', sans-serif;
 color: green;
 margin: 0px;
 width: 70%;
+display: flex;
+flex-wrap: wrap;
 
 }
 
 .descripciones {
+color: white;
+width: 100%;
 font-size: 16px;
 font-family: 'Roboto', sans-serif;
-display: none;
 transition: all 1s;
 }
 
 
 .descripciones:hover{
- display: flex;  
+ color: black;  
 }
 
 .box {
